@@ -3,18 +3,23 @@
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
+  <title>Benjamin Noble</title>
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
+  <h1>GitHub</h1>
+
   <div id='main'>
 
-    <h2>GitHub Search</h2>
+    <h2>Search Engine</h2>
 
     <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
+      <div id="searchBox">
+      <input id='search' type='text' name='search'placeholder='Search Username'>
+    </div>
+    <div id="searchButton">
+      <input id='submit' type='submit' name='submit'/>
+    </div>
     </form>
 
     <div id='github-container'>
@@ -27,7 +32,11 @@
       </ul>
     </div>
 
-  </div>
+    <div id="avatar">
+      
+    </div>
 
+  </div>
+  <script src='js/index.js'></script>
 </body>
 </html>
