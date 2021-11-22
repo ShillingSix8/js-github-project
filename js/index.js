@@ -12,6 +12,5 @@ form.addEventListener('submit', function(event){
     .then((data)=> {
 
         document.querySelector('#user-list').innerHTML = `<li>${data.name}</li>`;
-        document.querySelector('#avatar').innerHTML = `<img src='${data.avatar_url}'/>`;
+        document.querySelector('#avatar').innerHTML = `<a target='_blank' href='https:www.github.com/${searchName}'> <img src='${data.avatar_url}'/></a>`;
     })
-})
