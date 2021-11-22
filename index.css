@@ -17,12 +17,17 @@ h1 {
 #search {
   width: 300px;
   border: none;
+  height: 30px;
+  border-radius: 12px;
+  text-align: center;
 }
 #submit {
   width: 300px;
   background-color: rgb(0, 0, 0);
   color: white;
   border: none;
+  height: 30px;
+  border-radius: 12px;
 }
 
 #github-form{

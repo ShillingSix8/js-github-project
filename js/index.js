@@ -10,7 +10,8 @@ form.addEventListener('submit', function(event){
     fetch('https://api.github.com/users/'+searchName)
     .then((response)=> response.json())
     .then((data)=> {
-
-        document.querySelector('#user-list').innerHTML = `<li>${data.name}</li>`;
+        document.querySelector('#user-list').innerHTML = `<li>Name: ${data.name}</li> <li>Login: ${data.login}</li> <li>ID: ${data.id}</li>`;
         document.querySelector('#avatar').innerHTML = `<a target='_blank' href='https:www.github.com/${searchName}'> <img src='${data.avatar_url}'/></a>`;
     })
+})
+
